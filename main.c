@@ -145,14 +145,14 @@ void memleakEx() {
   printf("String: %s\n", buffer);
 }
 int main() {
-  memleakEx();
-  exit(0);
-  tokenizeEx();
+  // memleakEx();
+  // exit(0);
+  // tokenizeEx();
   printfEx();
-  fopenEx();
-  getlineEx();
-  memsetEx();
-  strSortEx();
+  // fopenEx();
+  // getlineEx();
+  // memsetEx();
+  // strSortEx();
 
   exit(EXIT_SUCCESS);
 }
