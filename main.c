@@ -14,7 +14,11 @@ void printfEx() {
   // cannot modify str
   // segmentation fault: str[3] = '\0';
   char *dest = (char *)malloc(80 * sizeof(char));
+
+  //copy string from the pointer str
   strcpy(dest, str);
+
+  //Setting the index == 3 is the end of the array
   dest[3] = '\0';
   printf("shorter string: %s\n", dest);
   free(dest);
@@ -51,6 +55,7 @@ void getlineEx() {
     int length = atoi(strsep(&temp, ";"));
     assert(name != NULL && temp != NULL);
     int height = atoi(strsep(&temp, ";"));
+
     printf("Name: %s, length: %d, height: %d\n", name, length, height);
     assert(temp == NULL);
     // duplicated from strdup
@@ -148,9 +153,9 @@ int main() {
   // memleakEx();
   // exit(0);
   // tokenizeEx();
-  printfEx();
+  // printfEx();
   // fopenEx();
-  // getlineEx();
+  getlineEx();
   // memsetEx();
   // strSortEx();
 
